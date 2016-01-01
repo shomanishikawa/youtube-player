@@ -152,6 +152,7 @@ exports['default'] = function (elementId) {
 
     playerAPI = YouTubePlayer.promisifyPlayer(playerAPIReady);
     playerAPI.on = emitter.on;
+    playerAPI.off = emitter.off;
 
     return playerAPI;
 };
